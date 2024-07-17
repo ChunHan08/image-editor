@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>image editor</title>
+      <link href="style.css" rel="stylesheet" />
+      <link herf="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+      <link rel="sylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 text-center mb-3 mt-3">
+          <form id="imgurl">
+            <input type="text" placeholder="Image URL" id="onlineurl">
+            <button type="submit">Change Image</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="https://assets.hackclub.com/flag-orpheus-top.png" id="targetimage" alt="">
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 p-2 text-center" id="section_three">
+            <h3>Image Filters</h3>
+              <form id="slider-form">
+              <p>
+                <label for="gs">Grayscale</label>.
+                <input id="gs" name="gs" type="gs" min="" max="100" value="0" class="slider">
+              </p>
+              <p>
+                <label for="blur">Blur</label>
+                <input id="blur" name="blur" type="range" min="0" max="" value="0" class="slider"
+              </p>
+              <p>
+                <label for="hue-rotate">Hue-rotate</label>
+                <input id="sepia" name="sepia" type="range" min="0" max="" value="0" class="slider">
+              </p>
+              <button type="reset" class="btn btn-pimary" >Reset</button>
+          </form>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+    </div>
+      <script src="script.js"></script>
+  </body>
+</html>
